@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form - Buat Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #b0c4c4;
+      font-family: Arial, sans-serif;
+    }
+    .header {
+      background: #59625d;
+      padding: 20px;
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0;
+      color: rgb(0, 0, 0);
+    }
+    .nav {
+      background: #2f3e46;
+      overflow: hidden;
+      text-align: left;
+    }
+    .nav a {
+      display: inline-block;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    .nav a:hover {
+        background:#1c262b;
+    }
+    .content {
+        background:#b0c4c4; 
+        padding:20px; 
+        margin:0 auto; 
+        width:80%;
+    }
+    .footer {
+        background:#2f3e46; 
+        text-align:center; 
+        color:white; 
+        padding:10px;
+    }
+    form label {
+        display:block; 
+        margin:10px 0 5px;
+    }
+    .footer {
+      background: #2f3e46;
+      text-align: left;
+      color: white;
+      padding: 10px;
+    }
+    h2 {
+      margin-top: 15px;
+      text-align: left;
+      margin: 0px;
+    }
+    input[type="text"], select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin: -3px 0 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      position: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="header"><h1>HALAMAN FORM</h1>
+  </div>
+
+  <div class="nav">
+    <a href="home.html">Home</a>
+    <a href="#">Profile</a>
+    <a href="#">Product</a>
+    <a href="#">Contact</a>
+    <a href="halaman_form.html">Form</a>
+  </div>
+
+  <div class="content">
+    <h2>Formulir</h2>
+    <form action="aksi.html" method="get">
+      
+      <label>Nama:</label>
+      <input type="text" name="nama" required>
+
+      <label>Jenis Kelamin:</label>
+      <input type="radio" name="jk" value="Laki-laki"> Laki-laki
+      <input type="radio" name="jk" value="Perempuan"> Perempuan
+
+      <label>Jurusan:</label>
+      <select name="jurusan">
+        <option value="Informatika">Informatika</option>
+        <option value="Sistem Informasi">Sistem Informasi</option>
+      </select>
+
+      <label>Hobi:</label>
+      <input type="checkbox" name="hobi" value="Tidur"> Tidur
+      <input type="checkbox" name="hobi" value="Makan"> Olahraga
+      <input type="checkbox" name="hobi" value="Game"> Game
+      <input type="checkbox" name="hobi" value="Nonton"> Nonton
+
+      <label>Pesan:</label>
+      <textarea name="Pesan" rows="5" cols="30"></textarea>
+
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <div class="footer">
+    Copyright © 2025
+    </div>
+</body>
+</html>
